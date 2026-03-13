@@ -3,45 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyas Shivanikar - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Shreyas Shivanikar - Data Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Shreyas Shivanikar</a>
+                <h2>SS</h2>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#clients" class="nav-link">Clients</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#clients" class="nav-link">Clients</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#recommendations" class="nav-link">Recommendations</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
             <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -50,30 +37,31 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Shreyas Shivanikar</span></h1>
-                <p class="hero-subtitle">Sr. Data Engineer at Fractal Analytics | GCP Professional Data Engineer Certified</p>
-                <p class="hero-description">
-                    GCP Professional Data Engineering (PDE) certified engineer with 6 years of experience in cross-cloud (GCP & Azure), targeting opportunities in Data Engineering and Cloud Domain.
-                    Expertise in Data Modeling, KPI calculation transformations, migration activities, and building robust Data pipelines to drive optimization and deliver data-driven solutions.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <div class="hero-text">
+                    <h1 class="hero-title">Shreyas Shivanikar</h1>
+                    <p class="hero-subtitle">Senior Data Engineer</p>
+                    <p class="hero-description">
+                        Expertise in Data Modeling, KPI calculation transformations, migration activities, and building robust Data pipelines to drive optimization and deliver data-driven solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                    </div>
                 </div>
-                <div class="hero-social">
-                    <a href="https://linkedin.com/in/shreyas-shivanikar-906a01172" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/shreyas2704" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:shreyasshivanikar52@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                <div class="hero-image">
+                    <img src="Profile Photo.png" alt="Shreyas Shivanikar" class="profile-img">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="Profile Photo.png" alt="Shreyas Shivanikar" class="profile-img">
+            <div class="hero-social">
+                <a href="https://linkedin.com/in/shreyas-shivanikar-906a01172" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/shreyas2704" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:shreyasshivanikar52@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -82,40 +70,27 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a GCP Professional Data Engineering (PDE) certified engineer with 6 years of experience in cross-cloud (GCP & Azure), targeting opportunities in Data Engineering and Cloud Domain.
-                    </p>
-                    <p>
-                        My expertise includes Data Modeling, KPI calculation transformations, migration activities, building Data pipelines & analyzing data from multiple sources to drive optimization and improvement, and delivering data-driven solutions to difficult business challenges.
-                    </p>
-                    <p>
-                        I am well-versed with Google Cloud Platform (BigQuery, Cloud Composer (Airflow), Dataflow (Apache Beam), Pubsub, Dataproc) and Azure (Azure Data Factory). I also have experience in Query Cost Optimizations (BQ) in data warehouse, batch data & streaming data, performance tuning, and Data lineage methods.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h3>Education</h3>
-                                <p>PG Diploma in Big Data Analytics - CDAC-IACSD (2020)</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <h3>Experience</h3>
-                                <p>6+ years in Data Engineering & Cloud</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-trophy"></i>
-                            <div>
-                                <h3>Certifications</h3>
-                                <p>GCP Professional Data Engineer (2022)</p>
-                            </div>
-                        </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-database"></i>
                     </div>
+                    <h3>Data Engineering</h3>
+                    <p>Specializing in building scalable data pipelines and robust data architecture solutions for enterprise clients.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Expertise in GCP and Azure platforms, implementing cloud-native data solutions.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Insights</h3>
+                    <p>Transforming raw data into actionable business insights and KPI-driven dashboards.</p>
                 </div>
             </div>
         </div>
@@ -125,76 +100,69 @@
     <section id="experience" class="experience">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Senior Data Engineer</h3>
-                            <span class="timeline-date">Nov 2024 - Present</span>
-                        </div>
-                        <h4>Fractal Analytics</h4>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Senior Data Engineer</h3>
+                        <span class="exp-date">Nov 2024 - Present</span>
                     </div>
+                    <h4>Fractal Analytics</h4>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Engineer</h3>
-                            <span class="timeline-date">Dec 2022 - Nov 2024</span>
-                        </div>
-                        <h4>Fractal Analytics</h4>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Data Engineer</h3>
+                        <span class="exp-date">Jan 2021 - Oct 2024</span>
                     </div>
+                    <h4>Fractal Analytics</h4>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Engineering Sr Analyst</h3>
-                            <span class="timeline-date">Dec 2022 - Dec 2022</span>
-                        </div>
-                        <h4>Accenture</h4>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Senior Data Engineer</h3>
+                        <span class="exp-date">May 2020 - Dec 2020</span>
                     </div>
+                    <h4>Accenture</h4>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Engineering Analyst</h3>
-                            <span class="timeline-date">Jun 2021 - Dec 2022</span>
-                        </div>
-                        <h4>Accenture</h4>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Data Engineer</h3>
+                        <span class="exp-date">Jul 2018 - Apr 2020</span>
                     </div>
+                    <h4>Accenture</h4>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Engineer</h3>
-                            <span class="timeline-date">Jan 2021 - Jun 2021</span>
-                        </div>
-                        <h4>Neal Analytics</h4>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Senior Data Engineer</h3>
+                        <span class="exp-date">Jan 2018 - Jun 2018</span>
                     </div>
+                    <h4>Neal Analytics</h4>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Project Trainee</h3>
-                            <span class="timeline-date">Mar 2020 - Dec 2020</span>
-                        </div>
-                        <h4>Neal Analytics</h4>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Data Engineer</h3>
+                        <span class="exp-date">Apr 2018 - Jun 2018</span>
                     </div>
+                    <h4>Neal Analytics</h4>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Intern</h3>
-                            <span class="timeline-date">Dec 2017 - Jan 2018</span>
-                        </div>
-                        <h4>Edreamz Technologies</h4>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Software Developer</h3>
+                        <span class="exp-date">Jan 2018 - Jan 2018</span>
                     </div>
+                    <h4>Neal Analytics</h4>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Software Engineer</h3>
+                        <span class="exp-date">Dec 2017 - Jan 2018</span>
+                    </div>
+                    <h4>Edreamz Technologies</h4>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Intern</h3>
+                        <span class="exp-date">Dec 2017 - Jan 2018</span>
+                    </div>
+                    <h4>Edreamz Technologies</h4>
                 </div>
             </div>
         </div>
@@ -227,55 +195,43 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-database"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
+                    <div class="project-header">
+                        <i class="fas fa-database"></i>
                         <h3>Realtime Based Data for Analytics</h3>
-                        <p>Developed end-to-end real-time data pipelines for analytics using GCP services including BigQuery, Dataflow, Pub/Sub, and Airflow. Implemented real-time data processing and analytics for customer insights.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">GCP BigQuery</span>
-                            <span class="tech-tag">Dataflow</span>
-                            <span class="tech-tag">Pub/Sub</span>
-                            <span class="tech-tag">Airflow</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
+                    </div>
+                    <p>Developed end-to-end real-time data pipelines for analytics using GCP services including BigQuery, Dataflow, Pub/Sub, and Airflow.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">GCP BigQuery</span>
+                        <span class="tech-tag">Dataflow</span>
+                        <span class="tech-tag">Pub/Sub</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">Python</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
+                    <div class="project-header">
+                        <i class="fas fa-money-bill-wave"></i>
                         <h3>Finance Analytics</h3>
-                        <p>Leveraging Google Cloud Platform for building solutions with developing data models and KPIs for complex business use cases. Built scalable data models and sustainable processes to meet high volume of incoming data and maintain the standards.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">GCP BigQuery</span>
-                            <span class="tech-tag">Airflow</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
+                    </div>
+                    <p>Leveraging Google Cloud Platform for building solutions with developing data models and KPIs for complex business use cases.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">GCP BigQuery</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Python</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
+                    <div class="project-header">
+                        <i class="fas fa-cloud"></i>
                         <h3>Cloud Migration Solution</h3>
-                        <p>Led cloud migration project from on-premise to GCP, implementing data lake architecture and optimizing ETL processes. Achieved 40% cost reduction and improved performance.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">GCP</span>
-                            <span class="tech-tag">Cloud Storage</span>
-                            <span class="tech-tag">Dataproc</span>
-                            <span class="tech-tag">Apache Spark</span>
-                        </div>
+                    </div>
+                    <p>Led cloud migration project from on-premise to GCP, implementing data lake architecture and optimizing ETL processes.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">GCP</span>
+                        <span class="tech-tag">Cloud Storage</span>
+                        <span class="tech-tag">Dataproc</span>
+                        <span class="tech-tag">Apache Spark</span>
                     </div>
                 </div>
             </div>
@@ -287,8 +243,8 @@
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Tech Stack</h3>
+                <div class="skill-card">
+                    <h3>Tech Stack</h3>
                     <div class="skill-list">
                         <div class="skill-item">
                             <span>GCP</span>
@@ -340,59 +296,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">GCP BigQuery</span>
-                        <span class="skill-tag">GCP Composer (Airflow)</span>
-                        <span class="skill-tag">GCP Dataflow (Beam)</span>
-                        <span class="skill-tag">GCP Pubsub</span>
-                        <span class="skill-tag">GCP Dataproc</span>
-                        <span class="skill-tag">Azure Data Factory</span>
-                        <span class="skill-tag">Azure SQL DB</span>
-                        <span class="skill-tag">Databricks</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Data Engineering Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Data Modeling</span>
-                        <span class="skill-tag">Data Pipelines</span>
-                        <span class="skill-tag">ETL Processes</span>
-                        <span class="skill-tag">KPI Calculation</span>
-                        <span class="skill-tag">Query Optimization</span>
-                        <span class="skill-tag">Data Lineage</span>
-                        <span class="skill-tag">Performance Tuning</span>
-                        <span class="skill-tag">Data Quality</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Licenses & Certifications</h2>
-            <div class="certification-grid">
-                <div class="certification-item">
-                    <h3>Databricks Lakehouse Fundamentals</h3>
-                    <h4>Databricks</h4>
-                    <p>Credential ID: 60563121</p>
-                    <a href="#" target="_blank" class="btn btn-primary">Show credential</a>
-                </div>
-                <div class="certification-item">
-                    <h3>Professional Data Engineer</h3>
-                    <h4>Google</h4>
-                    <p>Credential ID: 45797617</p>
-                    <a href="#" target="_blank" class="btn btn-primary">Show credential</a>
-                </div>
-                <div class="certification-item">
-                    <h3>Microsoft Certified: Azure AI Fundamentals</h3>
-                    <h4>Microsoft</h4>
-                    <p>Credential ID: H621-4978</p>
-                    <a href="#" target="_blank" class="btn btn-primary">Show credential</a>
-                </div>
             </div>
         </div>
     </section>
@@ -402,7 +305,7 @@
         <div class="container">
             <h2 class="section-title">Recommendations</h2>
             <div class="recommendations-grid">
-                <div class="recommendation-item">
+                <div class="recommendation-card">
                     <div class="recommendation-header">
                         <div class="recommendation-avatar">
                             <i class="fas fa-user"></i>
@@ -416,7 +319,7 @@
                         <p>"I had the pleasure of working with Shreyas at Fractal. Shreyas possesses a strong blend of technical expertise with collaborative and approachable nature. He is always willing to learn and share knowledge with the team. I would highly recommend Shreyas and wish him continued success in all his future endeavors."</p>
                     </div>
                 </div>
-                <div class="recommendation-item">
+                <div class="recommendation-card">
                     <div class="recommendation-header">
                         <div class="recommendation-avatar">
                             <i class="fas fa-user"></i>
@@ -430,7 +333,7 @@
                         <p>"Shreyas is working as a Senior Data Engineer at Fractal Analytics. I am interacting with him on a day-to-day basis for data transformation in BigQuery. He has good blended knowledge of functional and technical aspects of work that he is doing and that is what makes him stand out. He is very well skilled in writing SQL, PySpark and well-known modules of GCP."</p>
                     </div>
                 </div>
-                <div class="recommendation-item">
+                <div class="recommendation-card">
                     <div class="recommendation-header">
                         <div class="recommendation-avatar">
                             <i class="fas fa-user"></i>
@@ -441,7 +344,7 @@
                         </div>
                     </div>
                     <div class="recommendation-content">
-                        <p>"Shreyas has showcased a deep understanding of Google Cloud Platform (GCP) services, including BigQuery, Dataflow, Cloud Storage, Pub/Sub, and Cloud Composer. One of Shreyas's standout qualities is his ability to troubleshoot and resolve complex data engineering challenges. He consistently identified bottlenecks in data workflows and implemented innovative solutions to improve efficiency. He worked seamlessly with cross-functional teams, including data scientists, analysts, and business stakeholders. Thanks to Shreyas's contributions, the project achieved its goals on time and within budget. The data infrastructure he built provided a solid foundation for data-driven decision-making, enabling the organization to derive valuable insights and improve operational efficiency. Shreyas's work has had a lasting impact, and the solutions he implemented continue to support the organization's data needs."</p>
+                        <p>"Shreyas has showcased a deep understanding of Google Cloud Platform (GCP) services, including BigQuery, Dataflow, Cloud Storage, Pub/Sub, and Cloud Composer. One of Shreyas's standout qualities is his ability to troubleshoot and resolve complex data engineering challenges. He consistently identified bottlenecks in data workflows and implemented innovative solutions to improve efficiency."</p>
                     </div>
                 </div>
             </div>
@@ -455,33 +358,41 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in hearing about new opportunities and exciting projects. 
-                    Feel free to reach out if you'd like to collaborate or just have a chat!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>shreyasshivanikar52@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91-8483907176</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Pune, India</span>
-                        </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="contact-social">
-                        <a href="https://linkedin.com/in/shreyas-shivanikar-906a01172" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/shreyas2704" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
+                    <h3>Email</h3>
+                    <p>shreyasshivanikar52@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
                     </div>
+                    <h3>Phone</h3>
+                    <p>+91-8483907176</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Pune, India</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/shreyas-shivanikar-906a01172" target="_blank">View Profile</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/shreyas2704" target="_blank">View Profile</a>
                 </div>
             </div>
         </div>
@@ -495,6 +406,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
