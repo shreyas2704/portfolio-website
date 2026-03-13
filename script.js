@@ -15,6 +15,29 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
+// Theme Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const html = document.documentElement;
+
+// Check for saved theme preference
+const currentTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', currentTheme);
+updateThemeIcon(currentTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
+
+function updateThemeIcon(theme) {
+    themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+}
+
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
@@ -62,16 +85,30 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Intersection Observer for animations
+// Enhanced Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
+            // Add staggered animation
+            setTimeout(() => {
+                entry.target.classList.add('animate-in');
+                
+                // Add special animations for different elements
+                if (entry.target.classList.contains('timeline-item')) {
+                    entry.target.classList.add('animate-left');
+                }
+                if (entry.target.classList.contains('recommendation-card')) {
+                    entry.target.classList.add('animate-scale');
+                }
+                if (entry.target.classList.contains('project-card')) {
+                    entry.target.classList.add('animate-right');
+                }
+            }, index * 100);
             observer.unobserve(entry.target);
         }
     });
@@ -80,12 +117,29 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll(
-        '.about-card, .exp-card, .project-card, .client-item, .contact-card, .recommendation-card'
+        '.about-card, .exp-card, .project-card, .client-item, .contact-card, .recommendation-card, .edu-card, .timeline-item'
     );
     
     animatedElements.forEach(el => {
         observer.observe(el);
     });
+    
+    // Add floating animation to profile image
+    const profileImg = document.querySelector('.profile-img');
+    if (profileImg) {
+        profileImg.classList.add('floating');
+    }
+    
+    // Add glow effect to theme toggle on hover
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('mouseenter', () => {
+            themeToggle.classList.add('glow');
+        });
+        themeToggle.addEventListener('mouseleave', () => {
+            themeToggle.classList.remove('glow');
+        });
+    }
 });
 
 // Skill bars animation
