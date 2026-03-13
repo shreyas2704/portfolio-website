@@ -1060,6 +1060,19 @@ body {
     color: #ef4444;
 }
 
+/* Dark Theme Mobile Hero */
+[data-theme="dark"] .hero-title {
+    color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .hero-subtitle {
+    color: #818cf8 !important;
+}
+
+[data-theme="dark"] .hero-description {
+    color: #94a3b8 !important;
+}
+
 /* Enhanced Hover Animations */
 .hero-title {
     animation: fadeInDown 1s ease-out;
@@ -1305,14 +1318,28 @@ body {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+        color: var(--text-dark) !important;
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.2;
     }
     
     .hero-subtitle {
         font-size: 1rem;
+        color: var(--primary-color) !important;
+        text-align: center;
+        margin-bottom: 1rem;
     }
     
     .hero-description {
         font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    .hero-text {
+        text-align: center;
+        padding: 0 1rem;
     }
     
     .section-title {
